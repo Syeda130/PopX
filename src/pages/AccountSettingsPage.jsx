@@ -6,7 +6,7 @@ function AccountSettingsPage() {
   const userData = {
     name: 'Marry Doe',
     email: 'Marry@Gmail.com',
-    profilePic: './public/profile.png',
+    profilePic: './profile.png',
     bio: 'Lorem Ipsum Dolor Sit Amet, Consectetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua.'
   };
 
