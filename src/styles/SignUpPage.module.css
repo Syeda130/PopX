@@ -1,0 +1,50 @@
+
+@import './variables.css';
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+
+.radioGroup {
+    margin-bottom: 20px;
+}
+
+.radioLabel {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    font-weight: 500; 
+}
+
+.radioLabel .required-star {
+    color: red;
+    margin-left: 2px;
+}
+
+.radioOptions {
+    display: flex;
+    gap: 20px; 
+}
+
+.radioOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.radioOption input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--primary-purple); 
+    width: 16px;
+    height: 16px;
+}
+
+
+.signupButtonContainer {
+    margin-top: auto;
+}

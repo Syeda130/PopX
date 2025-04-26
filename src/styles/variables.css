@@ -1,0 +1,18 @@
+
+:root {
+  --primary-purple: #6C25FF;
+  --secondary-purple-light: #CBC0FF;
+  --text-dark: #1D2226;
+  --text-grey: #919191;
+  --placeholder-grey: #919191;
+  --border-grey: #CBCBCB;
+  --background-grey-light: #FFFFFF;
+  --background-white: #F7F8F9;
+  --disabled-grey: #CBCBCB; 
+  --label-purple: #6C25FF;
+
+  --font-family-sans: "Rubik", sans-serif;  
+
+  --border-radius-input: 6px;
+  --border-radius-button: 6px;
+}

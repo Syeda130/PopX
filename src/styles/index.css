@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); /* Example Font */
+@import './variables.css';
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-grey-light); 
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius-button);
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 1px solid var(--border-grey);
+  border-radius: var(--border-radius-input);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--placeholder-grey);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  body {
+     padding: 15px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px; 
+  }
+}

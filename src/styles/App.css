@@ -1,0 +1,161 @@
+@import './variables.css';
+
+.app-container {
+  background-color: var(--background-white);
+  width: 100%;
+  max-width: 375px; 
+  min-height: 812px; 
+  padding: 30px 20px; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+
+}
+
+/* Style for Pages */
+.page-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  font-size: 1.75rem; 
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  line-height: 1.4;
+  width: 235px;
+  
+}
+
+.page-subtitle {
+  font-size: 1.125rem; 
+  color: var(--text-grey);
+  margin-bottom: 25px; 
+  line-height: 1.5;
+}
+
+/* Input Styling*/
+.input-group {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.input-color{
+ background-color: var(--background-white); 
+}
+.input-color::placeholder {
+  color: black; 
+}
+
+.input-colors{
+ background-color: var(--background-white); 
+}
+
+.input-group label {
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  font-size: 0.9rem; 
+  color: var(--label-purple);
+  background-color: var(--background-white); 
+  padding: 0 5px; 
+  transition: all 0.2s ease-out;
+  pointer-events: none; 
+  transform: translateY(-100%) translateY(-4px) scale(0.85); 
+  transform-origin: left top;
+}
+
+.input-group input {
+  padding: 18px 15px 6px 15px; 
+}
+
+.input-group label .required-star {
+    color: red; 
+    margin-left: 2px;
+}
+
+
+/* button styles*/
+.button {
+  display: block; 
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: var(--border-radius-button);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px; 
+  border: none;
+}
+
+.button-primary {
+  background-color: var(--primary-purple);
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #5a1ccc; 
+}
+
+.button-secondary {
+  background-color: var(--secondary-purple-light);
+  color: var(--text-dark); 
+}
+
+.button-secondary:hover {
+  background-color: #b9aee6; 
+}
+
+.button-disabled {
+  background-color: var(--disabled-grey);
+  color: white; 
+  cursor: not-allowed;
+}
+
+
+.button-container-bottom {
+    margin-top: auto; 
+    padding-top: 20px; 
+}
+
+@media (max-width: 600px) {
+  .app-container {
+     min-height: calc(100vh - 40px);
+  }
+}
+
+@media (max-width: 420px) {
+  .app-container {
+    padding: 25px 15px; 
+     min-height: calc(100vh - 30px);
+  }
+
+  .page-title {
+    font-size: 1.6rem; 
+    margin-bottom: 12px;
+  }
+
+  .page-subtitle {
+    font-size: 1rem; 
+    margin-bottom: 25px;
+  }
+
+  .input-group {
+    margin-bottom: 18px; 
+  }
+
+  .button {
+    padding: 12px 15px; 
+    font-size: 0.95rem;
+  }
+
+  .button-container-bottom {
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,69 @@
+@import "./variables.css";
+
+.settingsPage {
+  margin: -26px;
+}
+
+.acc {
+  width: 100%;
+}
+
+.settingsTitle {
+  background-color: white;
+  width: 102%;
+  padding: 1.2rem;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin: -6px;
+}
+
+.profileSection {
+  background-color: var(--background-white);
+  margin: 37px; 
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  margin-bottom: 15px;
+}
+
+.profilePic {
+  width: 70px; 
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-purple); 
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileName {
+  font-size: 1.1rem; 
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.profileEmail {
+  font-size: 0.9rem;
+  color: var(--text-grey);
+}
+
+.profileBio {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 20px; 
+}
+
+.separator {
+  border: none;
+  border-top: 1px dashed var(--border-grey); 
+  margin: 20px 0; 
+}
